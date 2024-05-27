@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguars in the Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        
+    <nav>
+        <ul>
+            <div class="icon">
+                <li><a href="index.html"><img src="index.image/icon.png" alt="Home"></a></li>
+            </div>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="issue-header">
+            <img src="Solution-3/invest3.jpg" alt="Jaguar in the Amazon">
+            <div class="iss-text1">
+                <div class="issue-box">
+                    <h1>Invest in Communities</h1>
+                    <p>Just participating or investing in the numerous communities</p>
+                    <p>that support the ecosystem can be of great help.</p>
+                </div>
+            </div>
+        </div>
+          <nav id="intro">
+            <h2>What is this about</h2>
+            <p>Find out how oil use affects the climate and environment through graphs, and find out how to reduce this use.</p>
+          </nav>
+    </header>
+
+
+    <section id="issue-page">
+        <div class="issue-box2">
+            <div class = "iss-text2">
+                <div class = "iss-h7">
+                    <h2>Why does investing help?</h2>
+                </div>
+                <div class = "iss-p">
+                    <p>Community investment in rainforests helps protect biodiversity, supports sustainable livelihoods, reduces deforestation, and maintains the forest's role in carbon sequestration, benefiting both local communities and the global ecosystem.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "issue-info2">
+            <img src = "Solution-3/invest7.jpg">
+        </div>
+
+
+    </section>
+
+  
+    <section id = "issue-page3" class="slideshow-container">
+        <div class="slide-container">
+            <div class="issue-box3">
+                <div class = "iss-text3">
+                    <div class = "iss-h2">
+                        <h2>How can we invest to the community?</h2>
+                    </div>
+                    <div class = "iss-p3">
+                        <p>Invest in rainforest communities by supporting sustainable agriculture, eco-tourism, non-timber forest products, and conservation education to create economic opportunities that preserve the rainforest.</p>
+                        <p>Check other communities you can support ⇨</p>
+                    </div>
+                </div>
+                    <div class="buttons-container">
+                        <a href="solution1.html" class="button">Explore the first solution</a>
+                        <a href="solution2.html" class="button">Explore the second solution</a>
+                    </div>
+            </div>
+         <div class="mySlides fade">
+            <a href = "https://www.rainforest-alliance.org/support/"><img src="Solution-3/invest4.PNG" style="width:70%"></a>
+            <div class="text">Invest to the Rainforest-Alliance Community</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <a href = "https://www.amazoniaimpactventures.com/"><img src="Solution-3/invest5.jpg" style="width:70%"></a>
+        <div class="text">Invest to the Amazonia Community</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <a href = "https://thegenerationforest.com/en/"><img src="Solution-3/invest6.png" style="width:70%"></a>
+        <div class="text">Invest to the Generation Forest Community</div>
+      </div>
+    
+    
+      <!-- Next and previous buttons -->
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:right;margin-right:27%;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+</div>
+</main>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com/actioningchange" target="_blank">
+                <img src="index.image/instagram-logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/ActioningChange/" target="_blank">
+                <img src="index.image/facebook-logo.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>"In our hands now lies not only our own future, but that of all other living creatures with whom we share the Earth.”</p>
+        </div>
+    </footer>
+
+</body>
+</html>
