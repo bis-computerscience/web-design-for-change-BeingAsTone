@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguars in the Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        
+    <nav>
+        <ul>
+            <div class="icon">
+                <li><a href="index.html"><img src="index.image/icon.png" alt="Home"></a></li>
+            </div>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="issue-header">
+            <img src="Solution-1/paper.jpg" alt="Jaguar in the Amazon">
+            <div class="iss-text1">
+                <div class="issue-box">
+                    <h1>Reduce Wood & Paper Use</h1>
+                    <p>Reducing the use of paper and wood can have a huge impact </p>
+                    <p>and help jaguars survive.</p>
+                </div>
+            </div>
+        </div>
+          <nav id="intro">
+            <h2>What is this about</h2>
+            <p>By looking at the usage of each type of paper, we realize the seriousness of the problem, how this usage affects jaguars, and how we can help.</p>
+          </nav>
+    </header>
+
+    
+    <section id="issue-page2">
+        <div class ="iss-chart2">
+            <img src="https://www.statista.com/graphic/1/595854/paper-consumption-worldwide-distribution-by-region.jpg" alt="Statistic: Paper consumption worldwide in 2016 by region (in 1,000 tons) | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/>
+        </div>
+    </section>
+  
+
+    <section id="issue-page">
+        <div class=" vertical-line2"></div>
+        <div class=" vertical-line2-1"></div>
+        <div class="issue-box2">
+            <div class = "iss-text2">
+                <div class = "iss-h5">
+                    <h2>How is the paper consumption?</h2>
+                </div>
+                <div class = "iss-p">
+                    <p>Many regions are showing enormous paper consumption. And it still hasn't shown any significant changes to this day. Since most paper is produced from trees, many trees ultimately have to be cut down. Deforestation ultimately destroys the Amazon environment, causing many jaguars to lose their home.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "issue-info1">
+            <img src = "Solution-1/paper2.jpg">
+        </div>
+
+
+    </section>
+
+  
+    <section id = "issue-page3" class="slideshow-container">
+        <div class="slide-container">
+            <div class="issue-box3">
+                <div class = "iss-text3">
+                    <div class = "iss-h2">
+                        <h2>How can we help reducing the use?</h2>
+                    </div>
+                    <div class = "iss-p2">
+                        <p>The use of wood and paper products ultimately causes deforestation. You can help effectively by reducing your paper and wood consumption by using both sides of paper, using cloth bags, napkins and towels, and avoiding disposable items.</p>
+                    </div>
+                </div>
+                    <div class="buttons-container">
+                        <a href="solution2.html" class="button">Explore the second solution</a>
+                        <a href="solution3.html" class="button">Explore the third solution</a>
+                    </div>
+            </div>
+        <div class="mySlides fade">
+            <img src="Solution-1/paperwood1.jpg" style="width:70%">
+            <div class="text">This many trees are cut down in the Amazon to produce tons of paper.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Solution-1/paper3.jpg" style="width:70%">
+        <div class="text">Countless trees that are cut down produce this much paper.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Solution-1/cloth bag.jpg" style="width:70%">
+        <div class="text">Let's pay a little more attention to this issue and try to consume more efficiently.</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:right;margin-right:27%;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+</div>
+</main>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com/actioningchange" target="_blank">
+                <img src="index.image/instagram-logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/ActioningChange/" target="_blank">
+                <img src="index.image/facebook-logo.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>"In our hands now lies not only our own future, but that of all other living creatures with whom we share the Earth.”</p>
+        </div>
+    </footer>
+
+</body>
+</html>
