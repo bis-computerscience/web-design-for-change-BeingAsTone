@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguars in the Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        
+    <nav>
+        <ul>
+            <div class="icon">
+                <li><a href="index.html"><img src="index.image/icon.png" alt="Home"></a></li>
+            </div>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="issue-header">
+            <img src="issue-1/issue-image1.jpg" alt="Jaguar in the Amazon">
+            <div class="iss-text1">
+                <div class="issue-box">
+                    <h1>Population of Jaguars</h1>
+                    <p>There are now serious changes and problems in the jaguar population. </p>
+                    <p>Let's explore how is the population of Jaguars changing. </p>
+                </div>
+            </div>
+        </div>
+          <nav id="intro">
+            <h2>What is this about</h2>
+            <p>We will find out what the current population of jaguars is like. Let’s take a look at the detailed trend through the graph.</p>
+          </nav>
+    </header>
+
+    <section id="issue-page2">
+        <div class = "data-title1">
+            <h2>Trend of the Jaguar Population</h2>
+        </div>
+        <div class ="iss-img1">
+            <img src = "issue-1/graph1.png">
+        </div>
+    </section>
+
+    <section id="issue-page">
+        <div class=" vertical-line2"></div>
+        <div class=" vertical-line2-1"></div>
+        <div class="issue-box2">
+            <div class = "iss-text2">
+                <div class = "iss-h">
+                    <h2>What is the current population of jaguars?</h2>
+                </div>
+                <div class = "iss-p">
+                    <p>The jaguar population has been on a downward trend since 1960. It appears that it has decreased drastically compared to the first time. It can be seen that while the number was well over 400,000, in 2014 there were less than 50,000</p>
+                </div>
+            </div>
+        </div>
+        <div class = "issue-info1">
+            <img src = "issue-1/issue-image2.jpg">
+        </div>
+
+
+    </section>
+
+  
+    <section id = "issue-page3" class="slideshow-container">
+        <div class="slide-container">
+            <div class="issue-box3">
+                <div class = "iss-text3">
+                    <div class = "iss-h2">
+                        <h2>Why does this problem occur?</h2>
+                    </div>
+                    <div class = "iss-p2">
+                        <p>The main reason why the jaguar population is decreasing is because their habitats are gradually being reduced by humans. As there is no place to live, their food will also disappear, and as a result, many jaguars are dying.</p>
+                    </div>
+                </div>
+                    <div class="buttons-container">
+                        <a href="solution1.html" class="button">Explore how can we solve this issue</a>
+                        <a href="issue3.html" class="button">Explore more about this issue</a>
+                    </div>
+            </div>
+        <div class="mySlides fade">
+            <img src="issue-1/help3.jpg" style="width:70%">
+            <div class="text">Currently, many jaguar populations are declining, which is having a major impact on the ecosystem.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="issue-1/help2.jpg" style="width:70%">
+        <div class="text">These jaguars need your help a lot.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="issue-1/help1.jpg" style="width:70%">
+        <div class="text">Your interest in jaguars can further benefit the ecosystem.</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:right;margin-right:27%;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+</div>
+</main>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+    
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com/actioningchange" target="_blank">
+                <img src="index.image/instagram-logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/ActioningChange/" target="_blank">
+                <img src="index.image/facebook-logo.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>"In our hands now lies not only our own future, but that of all other living creatures with whom we share the Earth.”</p>
+        </div>
+    </footer>
+
+</body>
+</html>

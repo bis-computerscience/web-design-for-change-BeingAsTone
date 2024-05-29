@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguars in the Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div class="icon">
+                <li><a href="index.html"><img src="index.image/icon.png" alt="Home"></a></li>
+            </div>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="issue-header">
+            <div class="header-image">
+                <img src="ETC-image/quiz-header.jpg" alt="Jaguar in the Amazon">
+                <div class="image-text">
+                    <div class="issue-box">
+                    <h1>OX QUIZ</h1>
+                    <div class="orange-box">
+                        <a href="index.html">
+                        <p>Review Again</p>
+                        </a>
+                    </div>
+                </div>
+        </div>
+          <nav id="intro">
+            <h2>Slay The Quiz!</h2>
+          </nav>
+    </header>
+
+    <section id="quiz-box">
+    <div id="quiz-container">
+        <!-- Start Page -->
+        <div id="start-page">
+            <h1>How much you are aware now?</h1>
+            <button id="start-button">Start Quiz</button>
+        </div>
+
+        <!-- Question Page -->
+        <div id="question-page" style="display: none;">
+            <div id="question-container">
+                <h2 id="question-text">Question will appear here</h2>
+                <button class="answer-button" onclick="submitAnswer('O')">O</button>
+                <button class="answer-button" onclick="submitAnswer('X')">X</button>
+            </div>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+        </div>
+
+        <!-- Final Page -->
+        <div id="final-page" style="display: none;">
+            <h1>Your Results</h1>
+            <p id="result-text">You got X out of 5 correct!</p>
+            <button id="restart-button" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com/actioningchange" target="_blank">
+                <img src="index.image/instagram-logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/ActioningChange/" target="_blank">
+                <img src="index.image/facebook-logo.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>"In our hands now lies not only our own future, but that of all other living creatures with whom we share the Earth.”</p>
+        </div>
+    </footer>
+</body>
+</html>

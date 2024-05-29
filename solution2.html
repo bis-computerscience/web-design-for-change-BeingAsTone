@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaguars in the Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        
+    <nav>
+        <ul>
+            <div class="icon">
+                <li><a href="index.html"><img src="index.image/icon.png" alt="Home"></a></li>
+            </div>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game.html">Quiz</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="issue-header">
+            <img src="Solution-2/oil.jpg" alt="Jaguar in the Amazon">
+            <div class="iss-text1">
+                <div class="issue-box">
+                    <h1>Reduce Oil Consumption</h1>
+                    <p>TBy reducing oil use, we can improve the climate environment</p>
+                    <p>and save the ecosystem in which jaguars live.</p>
+                </div>
+            </div>
+        </div>
+          <nav id="intro">
+            <h2>What is this about</h2>
+            <p>Find out how oil use affects the climate and environment through graphs, and find out how to reduce this use.</p>
+          </nav>
+    </header>
+
+    <section id="issue-page2">
+        <div class ="iss-chart">
+            <iframe src="https://ourworldindata.org/grapher/annual-co2-oil?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+        </div>
+      
+    </section>
+
+    <section id="issue-page">
+        <div class=" vertical-line2"></div>
+        <div class=" vertical-line2-1"></div>
+        <div class="issue-box2">
+            <div class = "iss-text2">
+                <div class = "iss-h6">
+                    <h2>What is the impact of oil consumption?</h2>
+                </div>
+                <div class = "iss-p">
+                    <p>Oil production significantly impacts climate, particularly global warming, causing significant environmental degradation. This devastation affects jaguars, making their survival difficult due to the destruction of their natural habitat.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "issue-info1">
+            <img src = "Solution-2/oil2.jpg">
+        </div>
+
+
+    </section>
+
+  
+    <section id = "issue-page3" class="slideshow-container">
+        <div class="slide-container">
+            <div class="issue-box3">
+                <div class = "iss-text3">
+                    <div class = "iss-h2">
+                        <h2>How can we help reducing the use?</h2>
+                    </div>
+                    <div class = "iss-p2">
+                        <p>Climate change threatens global stability by burning oil, gas, and coal, destroying jaguar habitats. Preventing it involves reducing oil consumption, using fuel-efficient cars, avoiding sport utility vehicles, and using public transportation.</p>
+                    </div>
+                </div>
+                    <div class="buttons-container">
+                        <a href="solution1.html" class="button">Explore the first solution</a>
+                        <a href="solution3.html" class="button">Explore the third solution</a>
+                    </div>
+            </div>
+        <div class="mySlides fade">
+            <img src="Solution-2/coal.jpg" style="width:70%">
+            <div class="text">To this day, a lot of oil is being used and burned.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Solution-2/electric.jpg" style="width:70%">
+        <div class="text">Instead of using tons of fuel, use electric vehicles or fuel-efficient cars.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Solution-2/public.jpg" style="width:70%">
+        <div class="text">Instead of regular cars that use a lot of fuel, let's help nature a little more by using public transportation.</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:right;margin-right:27%;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+</div>
+</main>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com/actioningchange" target="_blank">
+                <img src="index.image/instagram-logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/ActioningChange/" target="_blank">
+                <img src="index.image/facebook-logo.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>"In our hands now lies not only our own future, but that of all other living creatures with whom we share the Earth.”</p>
+        </div>
+    </footer>
+
+</body>
+</html>
